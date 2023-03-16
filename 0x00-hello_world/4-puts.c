@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * just using 
- * commentaire 
- * puts
+ *
+ *
  */
 int main(void)
 {
