@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * just using 
  * commentaire 
  * puts
