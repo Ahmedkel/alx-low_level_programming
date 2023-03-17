@@ -5,20 +5,22 @@
  */
 int main(void)
 {
-char nuk[3];
-int i,j,k;
-for (i = 0 ;i < 9; i++)
-{
-	for (j = i + 1; j < 10; j++)
+	int num1, num2;
+
+	for (num1 = 48; num1 <= 57; num1++)
 	{
-		nuk[0] = i + '0';
-		nuk[1] = j + '0';
-		nuk[2] = '\n' ;
-		for (k = 0; k < 3; k++)
+		for (num2 = 48; num2 <= 57; num2++)
+			if (num1 < num2)
 			{
-			putchar(nuk[k]);
+				putchar(num1);
+				putchar(num2);
+				if (num2 != 57 || num1 != 56)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
-		}
 	}
+	putchar(10);
 return (0);
 }
