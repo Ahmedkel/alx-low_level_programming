@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
  * main - Entry Point
  * Return: 0 (Success)
@@ -7,7 +6,7 @@
 int main(void)
 {
 char nuk[3];
-for (int i = 0 ; i < 9 ; i++)
+for (int i = 0 ;i < 9 ; i++)
 {
 	for (int j = i + 1; j < 10; j++)
 	{
@@ -16,7 +15,7 @@ for (int i = 0 ; i < 9 ; i++)
 		nuk[2] = '\n' ;
 		for (int k = 0; k < 3; k++)
 			{
-putchar(nuk);
+			putchar(nuk[k]);
 			}
 		}
 	}
