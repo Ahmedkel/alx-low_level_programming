@@ -6,7 +6,7 @@
 int main(void)
 {
 char nuk[3];
-int i,j;
+int i,j,k;
 for (i = 0 ;i < 9; i++)
 {
 	for (j = i + 1; j < 10; j++)
@@ -14,7 +14,7 @@ for (i = 0 ;i < 9; i++)
 		nuk[0] = i + '0';
 		nuk[1] = j + '0';
 		nuk[2] = '\n' ;
-		for (int k = 0; k < 3; k++)
+		for (k = 0; k < 3; k++)
 			{
 			putchar(nuk[k]);
 			}
