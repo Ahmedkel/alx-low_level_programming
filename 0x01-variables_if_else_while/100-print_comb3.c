@@ -6,9 +6,10 @@
 int main(void)
 {
 char nuk[3];
-for (int i = 0 ;i < 9 ; i++)
+int i,j;
+for (i = 0 ;i < 9; i++)
 {
-	for (int j = i + 1; j < 10; j++)
+	for (j = i + 1; j < 10; j++)
 	{
 		nuk[0] = i + '0';
 		nuk[1] = j + '0';
