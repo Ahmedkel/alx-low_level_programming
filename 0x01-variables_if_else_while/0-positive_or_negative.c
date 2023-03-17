@@ -1,8 +1,14 @@
-#include <stdlib.h> 
+#include <stdlib.h>
+#include <stdio.h>
 #include <time.h> 
 /* more headers goes there */ 
   
-/* betty style doc for function main goes there */ 
+/* betty style doc for function main goes there */
+/**
+ * main - Determines if a number is positive, negative or zero
+ *
+ * Return: 0
+*/
 int main(void) 
 { 
          int n; 
