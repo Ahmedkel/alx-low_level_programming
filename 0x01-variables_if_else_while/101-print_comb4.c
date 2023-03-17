@@ -15,7 +15,7 @@ for (m = m + 1 ; m <= 9 ; m++)
 putchar('0' + n);
 putchar('0' + p);
 putchar('0' + m);
-if (i < 7)
+if (n < 7)
 {
 putchar(',');
 putchar(' ');
