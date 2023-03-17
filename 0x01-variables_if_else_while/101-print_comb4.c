@@ -18,13 +18,14 @@ int main(void)
 				putchar(num1);
 				putchar(num2);
 				putchar(num3);
-				if (num2 != 57 || num1 != 56 || num != 55)
+				if (num2 != 57 || num1 != 56 || num3 != 55)
 				{
 					putchar(44);
 					putchar(32);
 				}
 			}
 		}
+	}
 	putchar(10);
 	return (0);
 }
