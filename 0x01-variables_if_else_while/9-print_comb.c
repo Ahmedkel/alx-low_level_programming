@@ -10,7 +10,7 @@ int io;
 for (io = 0 ; io <= 9 ; io++)
 {
 putchar(io + '0');
-if (x < 9)
+if (io < 9)
 {
 putchar(',');
 putchar(' ');
