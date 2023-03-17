@@ -8,7 +8,7 @@ int main(void)
 {
 int io;
 for (io = 0 ; io <= 9 ; io++)
-printf("%d",io);
+printf("%d", io);
 putchar('\n');
 return (0);
 }
