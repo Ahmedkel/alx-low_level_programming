@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * main - check the code .
+ * main - check the code.
  * @c : parameter
- * Return: 1 if c is lower .
- * Return: 0 if c is upper .
+ * Return: Return: 1 if char is lowercase, otherwise 0.
  */
 int _islower(int c)
 {
-if (c>='a'&&c<='z')
+if ( c >= 'a' && c <= 'z' )
 {
 	 return(1);
 }
