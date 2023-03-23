@@ -3,7 +3,7 @@
 /**
  * _isupper - checks for lowercase character
  * @c: character to check
- * Return: 1 if lowercase, 0 if uppercase
+ * Return: 1 if uppercase, 0 if lowercase
  */
 int _isupper(int c)
 {
@@ -15,5 +15,4 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-	_putchar('\n');
 }
