@@ -1,21 +1,25 @@
 #include "main.h"
+
 /**
- * print_diagonal - Entry Function
- * @n: integer
+ * print_diagonal - prints a line n times long
+ * @n: number of lines
+ * description: prints a line n times long using _putchar
  */
+
 void print_diagonal(int n)
 {
-	if (n <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (x = 0; x < n - 1; x++)
-		{
-			_putchar(32);
-		}
-		_putchar(92);
-		_putchar('\n');
-	}
+    int i = 0;
+    int a;
+    while (i < n)
+    {
+        a = i;
+        while (a--)
+            putchar(' ');
+        putchar('\\');
+        putchar('\n');
+        i++;
+    }
+    if (n <= 0)
+        putchar('\n');
 }
+
