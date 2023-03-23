@@ -8,23 +8,23 @@
 
 int main(void)
 {
-	int fizzbuzz;
+	int FizzBuzz;
 
-	for (fizzbuzz = 0; fizzbuzz < 100; fizzbuzz++)
+	for (FizzBuzz = 0; FizzBuzz < 100; FizzBuzz++)
 	{
-		if (fizzbuzz % 3 == 0 && fizzbuzz % 5 == 0)
+		if (FizzBuzz % 3 == 0 && FizzBuzz % 5 == 0)
 		{
-			printf("fizzbuzz\n");
+			printf("FizzBuzz\n");
 			continue;
 		}
 		else if (fizzbuzz % 3 == 0)
 		{
-			printf("fizz\n");
+			printf("Fizz\n");
 			continue;
 		}
 		else if (fizzbuzz % 5 == 0)
 		{
-			printf("buzz\n");
+			printf("Buzz\n");
 			continue;
 		}
 		printf("%d\n", fizzbuzz);
