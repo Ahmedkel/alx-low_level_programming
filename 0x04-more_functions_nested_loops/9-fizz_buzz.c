@@ -17,12 +17,12 @@ int main(void)
 			printf("FizzBuzz\n");
 			continue;
 		}
-		else if (fizzbuzz % 3 == 0)
+		else if (FizzBuzz % 3 == 0)
 		{
 			printf("Fizz\n");
 			continue;
 		}
-		else if (fizzbuzz % 5 == 0)
+		else if (FizzBuzz % 5 == 0)
 		{
 			printf("Buzz\n");
 			continue;
