@@ -5,30 +5,36 @@
   *
   * Return: Always 0 (Success)
   */
-
 int main(void)
 {
-	int FizzBuzz;
+	int i;
 
-	for (FizzBuzz = 1; FizzBuzz <= 100; FizzBuzz++)
+	for (i = 1; x <= 100; x++)
 	{
-		if (FizzBuzz % 3 == 0 && FizzBuzz % 5 == 0)
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
-			printf("FizzBuzz\n");
-			continue;
+			printf("FizzBuzz");
 		}
-		else if (FizzBuzz % 3 == 0)
+		else if (i % 3 == 0)
 		{
-			printf("Fizz\n");
-			continue;
+			printf("Fizz");
 		}
-		else if (FizzBuzz % 5 == 0)
+		else if (i % 5 == 0)
 		{
-			printf("Buzz\n");
-			continue;
+			printf("Buzz");
 		}
-		printf("%d\n", FizzBuzz);
+		else
+		{
+			printf("%d", i);
+		}
+
+		if (i != 100)
+		{
+			printf(" ");
+		}
 	}
+
+	printf("\n");
+
 	return (0);
 }
-
