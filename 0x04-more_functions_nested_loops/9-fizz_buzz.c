@@ -27,7 +27,7 @@ int main(void)
 			printf("Buzz\n");
 			continue;
 		}
-		printf("%d\n", fizzbuzz);
+		printf("%d\n", FizzBuzz);
 	}
 	return (0);
 }
