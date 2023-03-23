@@ -10,7 +10,7 @@ int main(void)
 {
 	int FizzBuzz;
 
-	for (FizzBuzz = 0; FizzBuzz < 100; FizzBuzz++)
+	for (FizzBuzz = 1; FizzBuzz <= 100; FizzBuzz++)
 	{
 		if (FizzBuzz % 3 == 0 && FizzBuzz % 5 == 0)
 		{
