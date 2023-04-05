@@ -9,5 +9,5 @@
 */
 int factorial(int n)
 {
-	return (n < 0 ? -1 : n == 0 : ? 1 : n * factorial(ln - 1));
+	return (n < 0 ? -1 : n == 0 ? 1 : n * factorial(ln - 1));
 }
