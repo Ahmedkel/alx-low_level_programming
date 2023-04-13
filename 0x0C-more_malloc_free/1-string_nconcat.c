@@ -1,12 +1,14 @@
 #include "main.h"
+
 /** 
  * string_nconcat - Concatenates two strings 
  * @s1: First string 
  * @s2: Second string 
  * @n: Number of characters from s2 to use 
  * Return: Pointer to allocated memory containing the concatenated string 
- */ 
-char *string_nconcat(char *s1, char *s2, unsigned int n) 
+ */
+
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 { 
 
 	size_t len1 = 0;
