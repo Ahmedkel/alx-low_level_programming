@@ -5,9 +5,7 @@
  * @nmemb: the number of elements in the array
  * @size: the size of each element in bytes
  *
- * Return: a pointer to the allocated 
- * memory, or NULL if nmemb or size is 0 or
- * if malloc fails
+ * Return: a pointer to the allocated
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
