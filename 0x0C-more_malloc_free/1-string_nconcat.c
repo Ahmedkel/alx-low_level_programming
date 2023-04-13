@@ -9,35 +9,40 @@
  * Return: Pointer to allocated memory containing the concatenated string
  */
 
-char *string_nconcat(char *s1, char *s2, size_t n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	size_t len1 = 0, len2 = 0, len = 0;
-	char *concat = NULL;
+	char *sout;
+	unsigned int ls1, ls2, lsout, i;
 
-	if (s1 != NULL)
-		len1 = strlen(s1);
+	if (s1 == NULL)
+		s1 = "";
 
-	if (s2 != NULL)
-		len2 = strlen(s2);
+	if (s2 == NULL)
+		s2 = "";
 
-	if (n >= len2)
-		n = len2;
+	for (ls1 = 0; s1[ls1] != '\0'; ls1++)
+		;
 
-	len = len1 + n + 1;
+	for (ls2 = 0; s2[ls2] != '\0'; ls2++)
+		;
 
-	concat = malloc(len * sizeof(char));
+	if (n > ls2)
+		n = ls2;
 
-	if (concat == NULL)
+	lsout = ls1 + n;
+
+	sout = malloc(lsout + 1);
+
+	if (sout == NULL)
 		return (NULL);
 
-	if (s1 != NULL)
-		strcpy(concat, s1);
-	else
-		concat[0] = '\0';
+	for (i = 0; i < lsout; i++)
+		if (i < ls1)
+			sout[i] = s1[i];
+		else
+			sout[i] = s2[i - ls1];
 
-	strncat(concat + len1, s2, n);
+	sout[i] = '\0';
 
-	concat[len - 1] = '\0';
-
-	return (concat);
+	return (sout);
 }
