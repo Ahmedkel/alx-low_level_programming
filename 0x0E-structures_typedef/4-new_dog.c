@@ -31,7 +31,7 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
- * nw_dog - creates a new dog struct
+ * new_dog - creates a new dog struct
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
@@ -41,17 +41,17 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *nw_dog;
+	dog_t *new_dog;
 	char *new_name, *new_owner;
 
-	nw_dog = malloc(sizeof(dog_t));
-	if (nw_dog == NULL)
+	new_dog = malloc(sizeof(dog_t));
+	if (new_dog == NULL)
 		return (NULL);
 
 	new_name = malloc(_strlen(name) + 1);
 	if (new_name == NULL)
 	{
-		free(nw_dog);
+		free(new_dog);
 		return (NULL);
 	}
 
@@ -59,16 +59,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new_owner == NULL)
 	{
 		free(new_name);
-		free(nw_dog);
+		free(new_dog);
 		return (NULL);
 	}
 
 	_strcpy(new_name, name);
 	_strcpy(new_owner, owner);
 
-	nw_dog->name = new_name;
-	nw_dog->age = age;
-	nw_dog->owner = new_owner;
+	new_dog->name = new_name;
+	new_dog->age = age;
+	new_dog->owner = new_owner;
 
-	return (nw_dog);
+	return (new_dog);
 }
