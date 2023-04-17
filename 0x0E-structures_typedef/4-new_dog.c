@@ -10,6 +10,7 @@
 int _strlen(char *s)
 {
 	int len = 0;
+
 	while (*(s++))
 		len++;
 	return (len);
@@ -26,6 +27,7 @@ int _strlen(char *s)
 char *_strcpy(char *dest, char *src)
 {
 	char *p = dest;
+
 	while ((*p++ = *src++));
 	return (dest);
 }
