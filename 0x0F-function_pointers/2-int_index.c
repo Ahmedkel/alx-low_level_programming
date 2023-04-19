@@ -1,3 +1,5 @@
+#include "function_pointers.h"
+
 /**
  * int_index - searches for an integer
  * @array: input integer array pointer
@@ -7,6 +9,7 @@
  * Return: index of the first element for which the cmp function does not return 0;
  * If no element matches, returns -1; if size <= 0, returns -1
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	if (size <= 0)
