@@ -1,6 +1,22 @@
 #include "lists.h"
 
 /**
+ * _strlen - returns the length of a string
+ * @s: string to be measured
+ *
+ * Return: length of the string
+ */
+
+unsigned int _strlen(char *s)
+{
+	unsigned int len;
+
+	for (len = 0; s[len]; len++)
+		;
+	return (len);
+}
+
+/**
  * add_node - adds a new node at the beginning of a list_t list
  * @head: pointer to pointer to the head of the list
  * @str: string to be added to the list
@@ -31,20 +47,4 @@ list_t *add_node(list_t **head, const char *str)
 	*head = new_node;
 
 	return (new_node);
-}
-
-/**
- * _strlen - returns the length of a string
- * @s: string to be measured
- *
- * Return: length of the string
- */
-
-unsigned int _strlen(char *s)
-{
-	unsigned int len;
-
-	for (len = 0; s[len]; len++)
-		;
-	return (len);
 }
