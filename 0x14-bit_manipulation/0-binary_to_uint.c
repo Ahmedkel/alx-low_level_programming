@@ -1,51 +1,29 @@
 #include "main.h"
 
 /**
- * string_length - Calculates the length of a string.
- * @str: The input string.
+ * binary_to_uint - converts a binary number to an unsigned int.
  *
- * Return: The length of the string.
- */
-int string_length(const char *str)
-{
-	int length = 0;
-
-	while (str[length])
-	{
-		length++;
-	}
-
-	return (length);
-}
-
-/**
- * binary_to_uint - Converts a binary number to an unsigned int.
- * @b: The input binary string.
+ * @b: pointer to a string of 0 and 1 chars.
  *
- * Return: The converted number, or 0 if there is one or more chars in the
- * string b that is not 0 or 1, or if b is NULL.
+ * Return: the converted number, or 0 if there is one or more chars in the
+ * string b that is not 0 or 1 or b is NULL.
  */
-
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0;
-	unsigned int result = 0;
-	int length = string_length(b);
+	unsigned int num = 0;
 
 	if (b == NULL)
-	{
 		return (0);
-	}
 
-	for (; i < length; i++)
+	for (; *b != '\0'; b++)
 	{
-		if (b[i] != '0' && b[i] != '1')
-		{
+		if (*b < '0' || *b > '1')
 			return (0);
-		}
 
-		result = result * 2 + (b[i] - '0');
+		num <<= 1;
+		if (*b == '1')
+			num += 1;
 	}
 
-	return (result);
+	return (num);
 }
